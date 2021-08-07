@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title> Songs List </mat-card-title>
+  <mat-card-content>
+    <mat-list data-cy="songs-list">
+      <mat-list-item
+        *ngFor="let song of songs"
+        attr.data-cy="songs-{{ song.id }}-item"
+        class="mat-list-option"
+        (click)="selected.emit(song)"
+      >
+        <span matLine attr.data-cy="song-{{ song.id }}-item-title">{{
+          song.title
+        }}</span>
+        <button
+          *ngIf="!readonly"
+          attr.data-cy="delete-song-{{ song.id }}-btn"
+          mat-icon-button
+          type="button"
+          color="warn"
+          (click)="deleted.emit(song); $event.stopImmediatePropagation()"
+        >
+          <mat-icon>clear</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

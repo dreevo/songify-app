@@ -1,0 +1,18 @@
+<div class="component-container">
+  <div class="list-component">
+    <angular-production-songs-list
+      [songs]="songs"
+      (selected)="selectSong($event)"
+      (deleted)="deleteSong($event)"
+    >
+    </angular-production-songs-list>
+  </div>
+  <div class="details-component">
+    <angular-production-songs-details
+      [song]="selectetSong"
+      (saved)="saveSong($event)"
+      (cancelled)="resetSongDetails()"
+    >
+    </angular-production-songs-details>
+  </div>
+</div>
