@@ -1,3 +1,5 @@
+import { SongService } from '@angular-production/core-data';
+import { Observable } from 'rxjs';
 import { Song } from '@angular-production/api-interfaces';
 import { Component, OnInit } from '@angular/core';
 
@@ -32,11 +34,12 @@ const emptySong: Song = {
 })
 export class SongsComponent implements OnInit {
   songs: Song[];
+  songs$: Observable<Song[]>;
   selectetSong: Song;
-  constructor() {}
+  constructor(private songService: SongService) {}
 
   ngOnInit(): void {
-    this.songs = mockSongs;
+    this.songs$ = this.songService.all();
     this.selectetSong = emptySong;
   }
 

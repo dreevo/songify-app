@@ -33,6 +33,13 @@
     "api-interfaces": {
       "tags": []
     },
+    "client": {
+      "tags": []
+    },
+    "client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["client"]
+    },
     "core-data": {
       "tags": []
     },
@@ -48,6 +55,9 @@
     "songify-e2e": {
       "tags": [],
       "implicitDependencies": ["songify"]
+    },
+    "ui-toolbar": {
+      "tags": []
     }
   }
 }

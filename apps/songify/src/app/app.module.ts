@@ -1,3 +1,4 @@
+import { UiToolbarModule } from '@angular-production/ui-toolbar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from '@angular-production/material';
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     CoreDataModule,
     CoreStateModule,
     AppRoutingModule,
+    UiToolbarModule,
     FormsModule,
   ],
   providers: [],

@@ -1,0 +1,19 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "title": "Don Toliver - No Idea",
+      "description": "A single from Don Toliver second official project HEAVEN OR HELL"
+    },
+    {
+      "id": "2",
+      "title": "Dead To Me - Kali Uchis",
+      "description": "Dead to Me” is the seventh song on Kali Uchis debut album Isolation"
+    },
+    {
+      "id": "3",
+      "title": "Dave Brubeck - Take Five",
+      "description": "A jazz standard composed by saxophonist Paul Desmond and originally recorded by the Dave Brubeck"
+    }
+  ]
+}

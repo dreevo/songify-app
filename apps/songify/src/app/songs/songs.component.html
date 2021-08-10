@@ -1,7 +1,7 @@
 <div class="component-container">
   <div class="list-component">
     <angular-production-songs-list
-      [songs]="songs"
+      [songs]="songs$ | async"
       (selected)="selectSong($event)"
       (deleted)="deleteSong($event)"
     >

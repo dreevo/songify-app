@@ -20,7 +20,8 @@
       ],
       "@angular-production/core-data": ["libs/core-data/src/index.ts"],
       "@angular-production/core-state": ["libs/core-state/src/index.ts"],
-      "@angular-production/material": ["libs/material/src/index.ts"]
+      "@angular-production/material": ["libs/material/src/index.ts"],
+      "@angular-production/ui-toolbar": ["libs/ui-toolbar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
