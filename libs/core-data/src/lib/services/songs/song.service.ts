@@ -2,7 +2,7 @@ import { Song } from '@angular-production/api-interfaces';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const ENDPOINT = 'http://localhost:3000/songs';
+const ENDPOINT = 'http://localhost:3333/api/songs';
 
 @Injectable({
   providedIn: 'root',
